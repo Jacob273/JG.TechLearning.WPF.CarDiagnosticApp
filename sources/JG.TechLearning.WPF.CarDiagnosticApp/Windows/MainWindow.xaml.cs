@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.Windows
 {
@@ -10,6 +11,13 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.Windows
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            App.Current.Shutdown();
         }
     }
 }

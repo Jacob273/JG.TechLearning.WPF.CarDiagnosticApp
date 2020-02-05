@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnosticApp", "JG.TechLearning.WPF.CarDiagnosticApp\JG.TechLearning.WPF.CarDiagnosticApp.csproj", "{966749AB-3A1E-4E8C-BD33-E464C889178A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnosticApp", "JG.TechLearning.WPF.CarDiagnosticApp\JG.TechLearning.WPF.CarDiagnosticApp.csproj", "{966749AB-3A1E-4E8C-BD33-E464C889178A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
