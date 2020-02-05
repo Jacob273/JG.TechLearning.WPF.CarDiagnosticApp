@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using GalaSoft.MvvmLight.Messaging;
+using JG.TechLearning.WPF.CarDiagnosticApp.IoC;
+using JG.TechLearning.WPF.CarDiagnosticApp.Enums;
+using JG.TechLearning.WPF.CarDiagnosticApp.Messages;
+using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using System.Windows;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp
@@ -13,5 +12,34 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp
     /// </summary>
     public partial class App : Application
     {
+        private ProgressWindow progressWindow;
+        private MainWindow mainWindow;
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            IoCKernel.Initialize(new AppModule());
+            progressWindow = IoCKernel.Get<ProgressWindow>();
+            progressWindow.Show();
+            Messenger.Default.Send(new IndicateProgressMessage() { OnLoadingEndedCallback = OnLoadingEnded });
+            base.OnStartup(e);
+        }
+
+        private void OnLoadingEnded(ProgressResult result)
+        {
+            Dispatcher.Invoke(() =>
+            {
+                switch (result)
+                {
+                    case ProgressResult.Failed:
+                        //todo: handle loading process failure
+                        break;
+                    case ProgressResult.Success:
+                        progressWindow.Hide();
+                        mainWindow = new MainWindow();
+                        mainWindow.Show();
+                        break;
+                }
+            });
+        }
     }
 }
