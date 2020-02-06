@@ -4,6 +4,8 @@ using JG.TechLearning.WPF.CarDiagnosticApp.Enums;
 using JG.TechLearning.WPF.CarDiagnosticApp.Messages;
 using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using System.Windows;
+using NLog.Config;
+using NLog;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp
 {
@@ -21,6 +23,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp
             progressWindow = IoCKernel.Get<ProgressWindow>();
             progressWindow.Show();
             Messenger.Default.Send(new IndicateProgressMessage() { OnLoadingEndedCallback = OnLoadingEnded });
+            LogManager.Configuration = IoCKernel.Get<LoggingConfiguration>();
             base.OnStartup(e);
         }
 

@@ -1,5 +1,6 @@
 using GalaSoft.MvvmLight;
 using JG.TechLearning.WPF.CarDiagnosticApp.Version;
+using NLog;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
 {
@@ -11,6 +12,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
         public MainViewModel(IVersionResolver versionResolver)
         {
             Title = $"Car diagnostic Application {versionResolver.GetVersion()}";
+            LogManager.GetCurrentClassLogger().Warn($"~Starting up {Title}");
         }
 
         private string _title;
