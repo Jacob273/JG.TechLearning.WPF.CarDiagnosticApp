@@ -8,21 +8,37 @@
         DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
         Title="{Binding Title}" 
         Height="450" 
+        Icon="diagnostic.png"
         WindowStartupLocation="CenterScreen"
         Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="9*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.OpacityMask>
             <VisualBrush Visual="{Binding ElementName=RounderBorder}" />
         </Grid.OpacityMask>
 
-        <Border Grid.Row="0" 
+        <Border Grid.RowSpan="2"
                 x:Name="RounderBorder" 
-                CornerRadius="30" 
+                CornerRadius="30 30 0 0" 
                 Background="White" 
                 BorderThickness="1,5,1,2" 
                 BorderBrush="{StaticResource BlueBrush}" />
+
+
+        <StackPanel Grid.Row="0">
+            <Label HorizontalAlignment="Center">TopBar</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label>Buttons</Label>
+            <Label>Buttons</Label>
+            <Label>Buttons</Label>
+            <Label>Buttons</Label>
+            <Label>Buttons</Label>
+            <Label>Buttons</Label>
+        </StackPanel>
+        
     </Grid>
 </Window>

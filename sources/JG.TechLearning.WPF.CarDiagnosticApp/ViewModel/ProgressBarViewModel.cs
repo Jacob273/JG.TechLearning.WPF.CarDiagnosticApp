@@ -1,14 +1,10 @@
-﻿using GalaSoft.MvvmLight;
-using JG.TechLearning.WPF.CarDiagnosticApp.Messages;
+﻿using JG.TechLearning.WPF.CarDiagnosticApp.Messages;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
 {
-    public class ProgressBarViewModel : ViewModelBase
+    public class ProgressBarViewModel : ViewModelBaseExt
     {
         public ProgressBarViewModel()
         {

@@ -4,7 +4,7 @@ using NLog;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
 {
-    public class MainViewModel : ViewModelBase
+    public class MainViewModel : ViewModelBaseExt
     {
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.

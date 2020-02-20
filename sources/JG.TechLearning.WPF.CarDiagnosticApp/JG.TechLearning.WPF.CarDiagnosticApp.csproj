@@ -19,6 +19,8 @@
     <OldToolsVersion>2.0</OldToolsVersion>
     <RootNamespace>JG.TechLearning.WPF.CarDiagnosticApp</RootNamespace>
     <AssemblyName>JG.TechLearning.WPF.CarDiagnosticApp</AssemblyName>
+    <ApplicationIcon />
+    <Win32Resource></Win32Resource>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -27,8 +29,16 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Resource\diagnostic.png" />
+    <None Remove="Windows\hnet.com-image.ico" />
+    <None Remove="Windows\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="5.0.0" />
     <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
     <PackageReference Include="NLog" Version="4.6.8" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resource\diagnostic.png" />
   </ItemGroup>
 </Project>
