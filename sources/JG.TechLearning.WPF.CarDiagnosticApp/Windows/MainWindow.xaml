@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp"
+        xmlns:controls="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp.Controls"
         mc:Ignorable="d"
         DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
         Title="{Binding Title}" 
@@ -31,13 +32,12 @@
         <StackPanel Grid.Row="0">
             <Label HorizontalAlignment="Center">TopBar</Label>
         </StackPanel>
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Label>Buttons</Label>
-            <Label>Buttons</Label>
-            <Label>Buttons</Label>
-            <Label>Buttons</Label>
-            <Label>Buttons</Label>
-            <Label>Buttons</Label>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
+            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
+
         </StackPanel>
         
     </Grid>
