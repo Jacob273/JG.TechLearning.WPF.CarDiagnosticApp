@@ -21,7 +21,7 @@
     <SolidColorBrush x:Key="ForegroundDarkBrush" Color="{StaticResource ForegroundDark}" />
 
     <!--Colors for information, warnings, alerts & others...  -->
-    <Color x:Key="CBlue">#3099c5</Color>
+    <Color x:Key="CBlue">#ff00B4ff</Color>
     <SolidColorBrush x:Key="BlueBrush" Color="{StaticResource CBlue}" />
 
     <Color x:Key="CTransparentBlue">#003099c5</Color>

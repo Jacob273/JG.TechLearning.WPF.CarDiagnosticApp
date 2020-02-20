@@ -15,7 +15,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
-            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.OpacityMask>
             <VisualBrush Visual="{Binding ElementName=RounderBorder}" />
@@ -25,7 +27,7 @@
                 x:Name="RounderBorder" 
                 CornerRadius="30 30 0 0" 
                 Background="White" 
-                BorderThickness="1,5,1,2" 
+                BorderThickness="1,5,1,0" 
                 BorderBrush="{StaticResource BlueBrush}" />
 
 
@@ -33,12 +35,17 @@
             <Label HorizontalAlignment="Center">TopBar</Label>
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
-            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="90" Height="90"></controls:LiveDataMainIcon>
-
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
         </StackPanel>
-        
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Top">
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+        </StackPanel>
+
     </Grid>
 </Window>
