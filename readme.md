@@ -1,3 +1,3 @@
-# WPF CarDiagnosticApp has been created for educational purposes.
+WPF application to simulate car diagnostics.
 
-###### All projects that I have been a part of until now were commercial projects, so this is my first open source! :)
+Mvvm, C#, Blend '19 used for controls design.
