@@ -36,15 +36,15 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
             <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
             <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
         </StackPanel>
         <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Top">
             <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
             <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
-            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
         </StackPanel>
 
     </Grid>

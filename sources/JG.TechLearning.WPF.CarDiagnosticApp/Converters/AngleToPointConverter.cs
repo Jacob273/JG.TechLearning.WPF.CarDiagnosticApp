@@ -7,13 +7,15 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.Converters
 {
     public class AngleToPointConverter : IValueConverter
     {
+        private const double _radius = 50;
+
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             double angle = (double)value;
-            double radius = 50;
 
-            double px = Math.Sin(angle * Math.PI / 180) * radius + radius;
-            double py = -Math.Cos(angle * Math.PI / 180) * radius + radius;
+            //Input for Math.Sin() and Math.Cos() are radians, thats why we convert angle * PI/180
+            double px = Math.Sin(angle * Math.PI / 180) * _radius + _radius;
+            double py = -Math.Cos(angle * Math.PI / 180) * _radius + _radius;
 
             return new Point(px, py);
         }

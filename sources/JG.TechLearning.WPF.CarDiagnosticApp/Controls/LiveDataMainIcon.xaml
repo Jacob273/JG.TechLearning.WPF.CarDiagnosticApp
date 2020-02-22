@@ -9,6 +9,14 @@
              Width="320">
     <Viewbox Margin="0,0,0,0" Width="320">
         <Canvas Height="250" Width="320">
+            <Rectangle Height="250" Stroke="Black" Width="317" Canvas.Left="3">
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.761,0.868" StartPoint="0.101,0.346">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="#FF00B4FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
             <Rectangle Height="250" Stroke="#FF00B4FF" Width="6" Fill="#FF080000"/>
             <Rectangle Height="5" Canvas.Left="7.433" Stroke="#FF00B4FF" Canvas.Top="122" Width="90" Fill="#FF080000" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
@@ -20,7 +28,14 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <TextBlock Height="50" Canvas.Left="73.5" Canvas.Top="40.333" Text="Live Data" TextWrapping="Wrap" Width="178" FontSize="40" Foreground="#FF00B4FF"/>
+            <TextBlock Height="50" Canvas.Left="73.5" Canvas.Top="40.333" Text="Live Data" TextWrapping="Wrap" Width="178" FontSize="40" Foreground="#FF00B4FF">
+                <TextBlock.Background>
+                    <LinearGradientBrush EndPoint="0.999,2.753" StartPoint="0.022,0.473">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Background>
+            </TextBlock>
             <Rectangle Height="5" Canvas.Left="109.433" Stroke="#FF00B4FF" Canvas.Top="122" Width="90" Fill="Black" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
@@ -41,7 +56,6 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle Height="250" Stroke="Black" Width="317" Canvas.Left="3"/>
             <Path Data="M7,14.5 L28,14.5 150.5,201.5 257.37238,52.5 319.04375,52 319.37929,49 256.7355,50.166667 151.09755,196.83333 27.90926,11.5 7.1679459,11.5 z" Fill="#FF00B4FF" Height="191" Canvas.Left="7" Stretch="Fill" Stroke="#FF00B4FF" Canvas.Top="11.5" Width="311"/>
             <Path Data="M6,10 L310,11.5" Fill="#FFF4F4F5" Height="2" Canvas.Left="11" Stretch="Fill" Stroke="#FF00B4FF" Canvas.Top="4.5" Width="305" StrokeThickness="4"/>
             <Path Data="M7,250 L316,250" Fill="#FFF4F4F5" Height="1" Canvas.Left="7" Stretch="Fill" Stroke="#FF00B4FF" Canvas.Top="239" Width="306" StrokeThickness="4" RenderTransformOrigin="0.5,0.5">
