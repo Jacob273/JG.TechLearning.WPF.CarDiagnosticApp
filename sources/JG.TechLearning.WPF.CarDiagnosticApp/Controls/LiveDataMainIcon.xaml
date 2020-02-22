@@ -17,6 +17,7 @@
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
+            <TextBlock Height="50" Canvas.Left="73.5" Canvas.Top="40.333" Text="Live Data" TextWrapping="Wrap" Width="178" FontSize="40" Foreground="#FF00B4FF"/>
             <Rectangle Height="250" Stroke="#FF00B4FF" Width="6" Fill="#FF080000"/>
             <Rectangle Height="5" Canvas.Left="7.433" Stroke="#FF00B4FF" Canvas.Top="122" Width="90" Fill="#FF080000" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
@@ -28,14 +29,6 @@
                     </TransformGroup>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <TextBlock Height="50" Canvas.Left="73.5" Canvas.Top="40.333" Text="Live Data" TextWrapping="Wrap" Width="178" FontSize="40" Foreground="#FF00B4FF">
-                <TextBlock.Background>
-                    <LinearGradientBrush EndPoint="0.999,2.753" StartPoint="0.022,0.473">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="White" Offset="1"/>
-                    </LinearGradientBrush>
-                </TextBlock.Background>
-            </TextBlock>
             <Rectangle Height="5" Canvas.Left="109.433" Stroke="#FF00B4FF" Canvas.Top="122" Width="90" Fill="Black" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <TransformGroup>

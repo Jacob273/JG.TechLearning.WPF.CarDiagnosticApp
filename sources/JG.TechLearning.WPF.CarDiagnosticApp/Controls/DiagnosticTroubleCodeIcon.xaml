@@ -17,7 +17,6 @@
                     </LinearGradientBrush>
                 </Rectangle.Fill>
             </Rectangle>
-            <Path Data="M51.5,51" Fill="#FFF4F4F5" Height="1" Canvas.Left="51.5" Stretch="Fill" Stroke="Black" Canvas.Top="51" Width="1"/>
             <Path Data="M34.917,133.98 L34.917,125.48293 35.333333,74.832997 43.500332,74.832997 43.500332,96.731682 56.601901,96.731682 56.601901,87.441473 63.185368,87.441473 82.699157,68.612044 122.68587,68.612044 122.68587,53.509431 95.795331,53.509431 95.795331,42.144834 158.14106,42.144834 158.14106,56.251933 135.95346,56.251933 135.95346,67.000455 169.66539,67.000455 212.80682,109.07101 225.36101,109.07101 225.36101,93.199979 240.68061,93.199979 240.68061,133.48089" Fill="#FF00B4FF" Height="94" Canvas.Left="36.125" Stretch="Fill" Stroke="Black" Canvas.Top="32" Width="206"/>
             <Path Data="M34.917,133.98 L34.917,125.48293 35.333333,74.832997 43.500332,74.832997 43.500332,96.731682 56.601901,96.731682 56.601901,87.441473 63.185368,87.441473 82.699157,68.612044 122.68587,68.612044 122.68587,53.509431 95.795331,53.509431 95.795331,42.144834 158.14106,42.144834 158.14106,56.251933 135.95346,56.251933 135.95346,67.000455 169.66539,67.000455 212.80682,109.07101 225.36101,109.07101 225.36101,93.199979 240.68061,93.199979 240.68061,133.48089" Fill="#FF00B4FF" Height="94" Canvas.Left="36.125" Stretch="Fill" Stroke="Black" Canvas.Top="123.333" Width="206" RenderTransformOrigin="0.5,0.5">
                 <Path.RenderTransform>
@@ -29,7 +28,7 @@
                     </TransformGroup>
                 </Path.RenderTransform>
             </Path>
-            <TextBlock Height="156" Canvas.Left="73.125" Canvas.Top="70.616" TextWrapping="Wrap" Width="132" Text="Diagnostic Trouble Code" Foreground="White" FontSize="26.667" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+            <TextBlock Height="105" Canvas.Left="53.125" Canvas.Top="32" TextWrapping="Wrap" Width="189" Text="Diagnostic codes" Foreground="#FFEEE6E6" FontSize="40"/>
         </Canvas>
     </Viewbox>
 </UserControl>
