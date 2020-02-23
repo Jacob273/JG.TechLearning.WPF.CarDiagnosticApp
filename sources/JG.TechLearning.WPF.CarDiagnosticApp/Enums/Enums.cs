@@ -12,4 +12,12 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.Enums
         Failed
     }
 
+    public enum LogInfoSeverity
+    {
+        Unknown,
+        Info,
+        Warning,
+        Error
+    }
+
 }

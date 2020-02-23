@@ -32,5 +32,23 @@
                                       HorizontalAlignment="Center">
             </ctrl:CircularProgressBar>
         </StackPanel>
+
+         <!-- Log window -->
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border Padding="3">
+                <ListView Grid.Row="1"
+                          Style="{StaticResource LogListViewLogStyle}" 
+                          ItemContainerStyle="{StaticResource LogItemContainerStyle}" 
+                          IsEnabled="False" 
+                          Template="{StaticResource LogListViewNewTemplate}" 
+                          ItemsSource="{Binding LogFileCollection}">
+                </ListView>
+            </Border>
+        </Grid>
+
     </Grid>
 </UserControl>

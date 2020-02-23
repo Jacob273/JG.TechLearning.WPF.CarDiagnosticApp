@@ -11,11 +11,11 @@
         Height="450" 
         Icon="../Resource/diagnostic.png"
         WindowStartupLocation="CenterScreen"
-        Width="800" Foreground="Black">
+        Width="550" Foreground="Black">
     <Window.Background>
-        <LinearGradientBrush EndPoint="0.518,0.773" StartPoint="0.514,-0.043">
+        <LinearGradientBrush EndPoint="0.508,1.24" StartPoint="0.514,-0.043">
             <GradientStop Color="White" Offset="0.955"/>
-            <GradientStop Color="#FF00B4FF" Offset="0.398"/>
+            <GradientStop Color="#FF00B4FF" Offset="0"/>
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
@@ -50,14 +50,6 @@
             <controls:CarTestsIcon Margin="4" Width="130" Height="100"></controls:CarTestsIcon>
             <controls:DPFIcon Margin="4" Width="130" Height="100"></controls:DPFIcon>
         </StackPanel>
-
-        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Top">
-            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
-            <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
-            <controls:CarTestsIcon Margin="4" Width="130" Height="100"></controls:CarTestsIcon>
-            <controls:DPFIcon Margin="4" Width="130" Height="100"></controls:DPFIcon>
-        </StackPanel>
-
 
         <Border Grid.Row="5"
                 Margin="0 4 0 0"

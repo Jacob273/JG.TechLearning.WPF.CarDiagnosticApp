@@ -20,21 +20,15 @@
         <Grid.OpacityMask>
             <VisualBrush Visual="{Binding ElementName=RounderBorder}" />
         </Grid.OpacityMask>
-
+        
         <Border Grid.Row="0" 
                 x:Name="RounderBorder" 
                 CornerRadius="30" 
+                Background="White" 
                 BorderThickness="1,5,1,2" 
-                BorderBrush="{StaticResource BlueBrush}" >
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="White"/>
-                    <GradientStop Color="#FF00B4FF" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
+                BorderBrush="{StaticResource BlueBrush}" />
         <views:ProgressBarControl VerticalAlignment="Top" Margin="0,0,0,20" />
-
+        
     </Grid>
 
 </Window>
