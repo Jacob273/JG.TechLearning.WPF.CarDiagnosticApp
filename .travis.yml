@@ -1,7 +1,9 @@
-windows: os
+os: windows
 language: csharp
 mono: none
 dotnet: 3.0.102
 solution: JG.TechLearning.CarDiagnosticApp.sln
 script:
- - dotnet restore
+- dotnet --version
+- dotnet restore
+- dotnet build
