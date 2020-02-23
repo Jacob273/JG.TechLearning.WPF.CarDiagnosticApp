@@ -11,7 +11,7 @@
         Height="450" 
         Icon="../Resource/diagnostic.png"
         WindowStartupLocation="CenterScreen"
-        Width="550" Foreground="Black">
+        Width="575" Foreground="Black">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.508,1.24" StartPoint="0.514,-0.043">
             <GradientStop Color="White" Offset="0.955"/>
