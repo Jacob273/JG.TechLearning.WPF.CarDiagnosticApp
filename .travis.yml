@@ -1,10 +1,9 @@
 os: windows
 language: csharp
 mono: none
-dotnet: 3.0.103
-solution: JG.TechLearning.CarDiagnosticApp.sln
+dotnet: 3.0
+
 script:
 - choco install dotnetcore-sdk
 - dotnet --version
 - dotnet restore
-- dotnet build
