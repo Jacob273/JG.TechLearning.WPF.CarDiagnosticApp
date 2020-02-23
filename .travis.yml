@@ -4,7 +4,7 @@ mono: none
 dotnet: 3.0.103
 solution: JG.TechLearning.CarDiagnosticApp.sln
 script:
-- dir
+- choco install dotnetcore-sdk
 - dotnet --version
 - dotnet restore
 - dotnet build
