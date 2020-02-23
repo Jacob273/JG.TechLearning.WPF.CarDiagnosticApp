@@ -3,10 +3,5 @@ language: csharp
 mono: none
 dotnet: 3.0.102
 solution: JG.TechLearning.CarDiagnosticApp.sln
-stages:
-  - build
-jobs:
-  include:
-    - stage: build
-      name: build solution
-      script: dotnet restore && dotnet build
+script:
+ - dotnet restore
