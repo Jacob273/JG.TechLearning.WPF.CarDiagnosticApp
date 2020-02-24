@@ -45,7 +45,9 @@
         </StackPanel>
         
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
-            <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            <Button Background="Transparent" Command="{Binding OpenLiveDataCommand}">
+                <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+            </Button>
             <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
             <controls:CarTestsIcon Margin="4" Width="130" Height="100"></controls:CarTestsIcon>
             <controls:DPFIcon Margin="4" Width="130" Height="100"></controls:DPFIcon>

@@ -1,4 +1,4 @@
-using GalaSoft.MvvmLight;
+using JG.TechLearning.WPF.CarDiagnosticApp.Commands;
 using JG.TechLearning.WPF.CarDiagnosticApp.Version;
 using NLog;
 
@@ -39,5 +39,26 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
                 RaisePropertyChanged(nameof(Title));
             }
         }
+
+        private RelayCommand _openLiveDataCommand;
+
+        /// <summary>
+        /// Gets the MyCommand.
+        /// </summary>
+        public RelayCommand OpenLiveDataCommand
+        {
+            get
+            {
+                return _openLiveDataCommand ?? (_openLiveDataCommand = new RelayCommand(
+                    () =>
+                    {
+
+                       
+                            
+                    },
+                    null));
+            }
+        }
+
     }
 }
