@@ -23,5 +23,12 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp
             }
         }
 
+        public LiveDataViewModel LiveDataViewModel
+        {
+            get
+            {
+                return IoCKernel.Get<LiveDataViewModel>();
+            }
+        }
     }
 }

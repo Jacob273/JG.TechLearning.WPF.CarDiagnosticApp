@@ -19,8 +19,12 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder)
         {
+            //viewmodels
             builder.RegisterType<MainViewModel>();
             builder.RegisterType<ProgressBarViewModel>();
+            builder.RegisterType<LiveDataViewModel>();
+
+            //others
             builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
             builder.RegisterType<ProgressWindow>();
 
