@@ -20,7 +20,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<WindowService>().As<IWindowService>();
+            builder.RegisterType<DialogWindowService>().As<IWindowService>();
             builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
 
             //viewmodels

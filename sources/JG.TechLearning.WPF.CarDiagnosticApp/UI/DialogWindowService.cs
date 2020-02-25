@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using System.Windows;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.UI
 {
-    public class WindowService : IWindowService
+    public class DialogWindowService : IWindowService
     {
         public void ShowWindow(object viewModel)
         {
-            var win = new Window();
+            var win = new DialogWindow();
             win.Content = viewModel;
             win.Show();
         }
