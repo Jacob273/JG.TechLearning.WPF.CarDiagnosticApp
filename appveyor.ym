@@ -1,1 +1,3 @@
-
+test_script:
+  - cmd: ECHO testing batch
+  - cmd: dotnet -version
