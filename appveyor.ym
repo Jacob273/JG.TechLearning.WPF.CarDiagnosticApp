@@ -14,11 +14,12 @@ install:
   
   
 before_build:
+  - cmd: echo Starting before_build
+  - cmd: dir
   # Display .NET Core version
   - cmd: dotnet --version
   # Display minimal restore text
   - cmd: dotnet restore ./src/src.csproj --verbosity m
-  
 after_build:
   # For once the build has completed
   
