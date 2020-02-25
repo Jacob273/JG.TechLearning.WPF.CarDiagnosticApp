@@ -9,7 +9,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.UI
         {
             var win = new DialogWindow();
             win.Content = viewModel;
-            win.Show();
+            win.ShowDialog();
         }
     }
 }
