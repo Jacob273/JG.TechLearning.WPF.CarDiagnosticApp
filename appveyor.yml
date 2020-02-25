@@ -1,4 +1,6 @@
 init:
   - cmd: ECHO Starting CI for CarDiagnostic APP.
   - cmd: dir
+
+before_build:
   - cmd: dotnet restore ./JG.TechLearning.WPF.CarDiagnosticApp/sources/JG.TechLearning.WPF.CarDiagnosticApp/JG.TechLearning.WPF.CarDiagnosticApp.csproj
