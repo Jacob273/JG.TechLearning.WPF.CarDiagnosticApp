@@ -1,3 +1,3 @@
 init:
-  - cmd: ECHO testing batch
-  - cmd: dotnet -version
+  - cmd: ECHO Starting CI for CarDiagnostic APP.
+  - cmd: dir
