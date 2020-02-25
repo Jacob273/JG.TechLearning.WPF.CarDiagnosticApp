@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using JG.TechLearning.WPF.CarDiagnosticApp.UI;
 using JG.TechLearning.WPF.CarDiagnosticApp.Version;
 using JG.TechLearning.WPF.CarDiagnosticApp.ViewModel;
 using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
@@ -19,16 +20,17 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<WindowService>().As<IWindowService>();
+            builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
+
             //viewmodels
-            builder.RegisterType<MainViewModel>();
+            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), new LiveDataViewModel()));
             builder.RegisterType<ProgressBarViewModel>();
             builder.RegisterType<LiveDataViewModel>();
 
-            //others
-            builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
             builder.RegisterType<ProgressWindow>();
 
-            builder.Register((c) =>
+            builder.Register((ctx) =>
             {
                 var config = new LoggingConfiguration();
                 var fileTarget = new FileTarget("logfile")

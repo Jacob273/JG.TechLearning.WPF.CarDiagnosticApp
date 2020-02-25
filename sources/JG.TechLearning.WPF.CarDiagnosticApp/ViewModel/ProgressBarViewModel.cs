@@ -61,7 +61,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
 
         private async void OnIndicateProgress(IndicateProgressMessage message)
         {
-                for (double i = 0; i <= 100; i += 1)
+                for (double i = 0; i <= 100; i += 10)
                 {
                     ProgressValue = +i;
                     await Task.Delay(50);

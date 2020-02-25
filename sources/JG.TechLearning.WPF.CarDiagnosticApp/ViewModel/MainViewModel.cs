@@ -1,4 +1,5 @@
 using JG.TechLearning.WPF.CarDiagnosticApp.Commands;
+using JG.TechLearning.WPF.CarDiagnosticApp.UI;
 using JG.TechLearning.WPF.CarDiagnosticApp.Version;
 using NLog;
 
@@ -6,13 +7,18 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
 {
     public class MainViewModel : ViewModelBaseExt
     {
+        private IWindowService _windowService;
+        private ViewModelBaseExt _liveDataViewModel;
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel(IVersionResolver versionResolver)
+        public MainViewModel(IVersionResolver versionResolver, IWindowService windowService, ViewModelBaseExt liveDataViewModel)
         {
             Title = $"Car diagnostic Application {versionResolver.GetVersion()}";
             LogManager.GetCurrentClassLogger().Warn($"~Starting up {Title}");
+            _windowService = windowService;
+            _liveDataViewModel = liveDataViewModel;
         }
 
         private string _title;
@@ -53,8 +59,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
                     () =>
                     {
 
-                       
-                            
+                        _windowService.ShowWindow(_liveDataViewModel);
                     },
                     null));
             }
