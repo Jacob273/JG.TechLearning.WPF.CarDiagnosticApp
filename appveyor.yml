@@ -4,4 +4,4 @@ init:
 
 before_build:
   - cmd: dir
-  - cmd: dotnet restore ./JG.TechLearning.WPF.CarDiagnosticApp/sources/JG.TechLearning.WPF.CarDiagnosticApp/JG.TechLearning.WPF.CarDiagnosticApp.csproj
+  - cmd: dotnet restore ./JG.TechLearning.WPF.CarDiagnosticApp/JG.TechLearning.WPF.CarDiagnosticApp.csproj
