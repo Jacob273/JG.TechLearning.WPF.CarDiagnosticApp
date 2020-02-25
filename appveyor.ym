@@ -19,7 +19,7 @@ before_build:
   # Display .NET Core version
   - cmd: dotnet --version
   # Display minimal restore text
-  - cmd: dotnet restore ./src/src.csproj --verbosity m
+  - cmd: dotnet restore ./JG.TechLearning.WPF.CarDiagnosticApp.csproj --verbosity m
 after_build:
   # For once the build has completed
   
