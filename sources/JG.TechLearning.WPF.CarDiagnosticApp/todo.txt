@@ -1,0 +1,6 @@
+﻿1. Add dll for LiveData mock.
+2. Add Connect Button.
+3. Add BaseCarInformation control wrapped inside MainWindow.
+4. Separate ViewModels into separate dll
+5. Separate Views into separate dll.
+6. Make first Mvvm.SendMessage from 1 to other viewmodel.
