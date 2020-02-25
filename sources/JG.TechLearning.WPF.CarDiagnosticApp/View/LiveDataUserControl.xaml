@@ -18,10 +18,9 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-
+       
         <TextBlock Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalAlignment="Center" IsEnabled="False" Margin="5">Speed value</TextBlock>
-        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="16" HorizontalAlignment="Center" IsEnabled="False" Margin="5" Text="{Binding LiveDataViewModel.SpeedValue}"></TextBlock>
-        
+        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="16" HorizontalAlignment="Center" IsEnabled="False" Margin="5" Text="{Binding SpeedValue}"></TextBlock>
         
     </Grid>
 </UserControl>

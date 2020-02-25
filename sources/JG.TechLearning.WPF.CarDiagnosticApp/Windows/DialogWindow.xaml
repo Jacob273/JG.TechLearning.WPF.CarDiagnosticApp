@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp.Windows"
         mc:Ignorable="d"
-        Title="DialogWindow" 
+        WindowStartupLocation="CenterScreen"
+        Title="Dialog" 
+        Icon="../Resource/diagnostic.png"
         Height="300" 
         Width="300">
     <Window.Background>
