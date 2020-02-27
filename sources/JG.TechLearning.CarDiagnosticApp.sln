@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnosticApp", "JG.TechLearning.WPF.CarDiagnosticApp\JG.TechLearning.WPF.CarDiagnosticApp.csproj", "{966749AB-3A1E-4E8C-BD33-E464C889178A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.IDataSource", "JG.TechLearning.WPF.CarDiagnostic.DataAccessLayer\JG.TechLearning.WPF.CarDiagnostic.IDataSource.csproj", "{7AB0353F-3C7F-43D5-B2F7-F1DA7C9C6816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.CarsMockDataSource", "JG.TechLearning.WPF.CarDiagnostic.CarsMockDAL\JG.TechLearning.WPF.CarDiagnostic.CarsMockDataSource.csproj", "{23D3D909-8421-4EB6-B93B-FA484DACFB0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessor", "JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPosessor\JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessor.csproj", "{C8FC4654-B235-470F-9462-870661CB01F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.MockDataSourcesPossesor", "JG.TechLearning.WPF.CarDiagnostic.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.MockDataSourcesPossesor.csproj", "{A7170F76-5E16-4420-817D-8799FC2BEDF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.DataSources.Common", "JG.TechLearning.WPF.CarDiagnostic.DataSources.Common\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common.csproj", "{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{966749AB-3A1E-4E8C-BD33-E464C889178A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966749AB-3A1E-4E8C-BD33-E464C889178A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{966749AB-3A1E-4E8C-BD33-E464C889178A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB0353F-3C7F-43D5-B2F7-F1DA7C9C6816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB0353F-3C7F-43D5-B2F7-F1DA7C9C6816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB0353F-3C7F-43D5-B2F7-F1DA7C9C6816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB0353F-3C7F-43D5-B2F7-F1DA7C9C6816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D3D909-8421-4EB6-B93B-FA484DACFB0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D3D909-8421-4EB6-B93B-FA484DACFB0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D3D909-8421-4EB6-B93B-FA484DACFB0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D3D909-8421-4EB6-B93B-FA484DACFB0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FC4654-B235-470F-9462-870661CB01F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FC4654-B235-470F-9462-870661CB01F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FC4654-B235-470F-9462-870661CB01F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FC4654-B235-470F-9462-870661CB01F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

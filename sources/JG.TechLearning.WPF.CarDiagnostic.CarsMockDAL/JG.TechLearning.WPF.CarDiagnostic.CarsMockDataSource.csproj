@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.CarsMockDataSource</AssemblyName>
+    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.CarsMockDataSource</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataAccessLayer\JG.TechLearning.WPF.CarDiagnostic.IDataSource.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common.csproj" />
+  </ItemGroup>
+
+</Project>

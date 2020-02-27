@@ -1,4 +1,8 @@
 ﻿using Autofac;
+using JG.TechLearning.WPF.CarDiagnostic.DataSources.Common;
+using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
+using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;
+using JG.TechLearning.WPF.CarDiagnostic.Mock;
 using JG.TechLearning.WPF.CarDiagnosticApp.UI;
 using JG.TechLearning.WPF.CarDiagnosticApp.Version;
 using JG.TechLearning.WPF.CarDiagnosticApp.ViewModel;
@@ -6,6 +10,7 @@ using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using NLog;
 using NLog.Config;
 using NLog.Targets;
+using System.Linq;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
 {
@@ -20,13 +25,31 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<MockDataPossessor>().As<IDataSourcesPossessor>().SingleInstance();
+
+            builder.Register((ctx) =>
+            {
+                var possesor = ctx.Resolve<IDataSourcesPossessor>();
+                var carsDA = possesor.DataSources
+                                     .Select(x => x)
+                                     .Where(x => x.Name.Equals(Constants.CarsDataSourceName))
+                                     .FirstOrDefault();
+                return carsDA;
+            }).Keyed<IDataSource>(Constants.CarsDataSourceName).SingleInstance();
+
             builder.RegisterType<DialogWindowService>().As<IWindowService>();
             builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
 
             //viewmodels
-            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), new LiveDataViewModel()));
+            builder.Register((ctx) =>
+            {
+                var carsDataSource = ctx.ResolveNamed<IDataSource>(Constants.CarsDataSourceName);
+                return new LiveDataViewModel(carsDataSource);
+
+            }).As<LiveDataViewModel>().SingleInstance();
+            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), ctx.Resolve<LiveDataViewModel>()));
             builder.RegisterType<ProgressBarViewModel>();
-            builder.RegisterType<LiveDataViewModel>();
+            
 
             builder.RegisterType<ProgressWindow>();
 
