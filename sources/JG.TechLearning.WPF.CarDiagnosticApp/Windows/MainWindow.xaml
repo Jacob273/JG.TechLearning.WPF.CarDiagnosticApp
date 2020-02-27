@@ -11,7 +11,7 @@
         Height="450" 
         Icon="../Resource/diagnostic.png"
         WindowStartupLocation="CenterScreen"
-        Width="590" Foreground="Black">
+        Width="310" Foreground="Black">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.508,1.24" StartPoint="0.514,-0.043">
             <GradientStop Color="White" Offset="0.955"/>
@@ -52,6 +52,9 @@
             <Button Background="Transparent">
                 <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
             </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Top">
             <Button Background="Transparent">
                 <controls:CarTestsIcon Margin="4" Width="130" Height="100"></controls:CarTestsIcon>
             </Button>
@@ -59,7 +62,7 @@
                 <controls:DPFIcon Margin="4" Width="130" Height="100"></controls:DPFIcon>
             </Button>
         </StackPanel>
-
+        
         <Border Grid.Row="5"
                 Margin="0 4 0 0"
                 x:Name="RounderBorderBottomBar" 
