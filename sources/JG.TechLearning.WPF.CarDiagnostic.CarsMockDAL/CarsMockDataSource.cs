@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Timers;
 
-namespace JG.TechLearning.WPF.CarDiagnostic.CarsMockDataSourceNS
+namespace JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS
 {
     public class CarsMockDataSource : IDataSource
     {

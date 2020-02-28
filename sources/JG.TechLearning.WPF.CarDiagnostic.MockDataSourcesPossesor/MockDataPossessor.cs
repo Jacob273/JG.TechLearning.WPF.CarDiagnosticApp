@@ -1,4 +1,4 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.CarsMockDataSourceNS;
+﻿using JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;
 using System.Collections.Generic;

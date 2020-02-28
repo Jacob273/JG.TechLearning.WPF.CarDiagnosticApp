@@ -47,7 +47,7 @@
     <Folder Include="Implementation\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPosessor\JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessor.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.MockDataSourcesPossesor.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPosessor\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor.csproj" />
   </ItemGroup>
 </Project>

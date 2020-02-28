@@ -1,6 +1,4 @@
-﻿using GalaSoft.MvvmLight;
-using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
-using System;
+﻿using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using System.Linq;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel

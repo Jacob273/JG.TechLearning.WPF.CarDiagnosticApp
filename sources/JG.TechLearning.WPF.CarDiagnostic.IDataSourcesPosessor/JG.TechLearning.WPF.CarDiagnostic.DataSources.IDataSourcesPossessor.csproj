@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.DataSourcse.IDataSourcesPossessor</AssemblyName>
+    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataAccessLayer\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
+  </ItemGroup>
+
+</Project>

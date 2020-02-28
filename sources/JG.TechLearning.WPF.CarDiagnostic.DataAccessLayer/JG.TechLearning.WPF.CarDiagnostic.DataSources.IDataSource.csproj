@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource</AssemblyName>
+    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource</RootNamespace>
+  </PropertyGroup>
+
+</Project>
