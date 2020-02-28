@@ -29,6 +29,12 @@
     <DebugType>pdbonly</DebugType>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="Implementation\**" />
+    <EmbeddedResource Remove="Implementation\**" />
+    <None Remove="Implementation\**" />
+    <Page Remove="Implementation\**" />
+  </ItemGroup>
+  <ItemGroup>
     <None Remove="Resource\diagnostic.png" />
     <None Remove="Windows\hnet.com-image.ico" />
     <None Remove="Windows\icon.ico" />
@@ -42,9 +48,6 @@
     <Resource Include="Resource\diagnostic.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Implementation\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj" />
