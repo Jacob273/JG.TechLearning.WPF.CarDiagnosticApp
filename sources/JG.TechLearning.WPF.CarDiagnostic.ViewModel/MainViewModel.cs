@@ -1,9 +1,7 @@
-using JG.TechLearning.WPF.CarDiagnosticApp.Commands;
-using JG.TechLearning.WPF.CarDiagnosticApp.UI;
-using JG.TechLearning.WPF.CarDiagnosticApp.Version;
+using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using NLog;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
+namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
 {
     public class MainViewModel : ViewModelBaseExt
     {

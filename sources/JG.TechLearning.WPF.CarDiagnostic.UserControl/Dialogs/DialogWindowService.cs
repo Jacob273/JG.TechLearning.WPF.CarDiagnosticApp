@@ -1,7 +1,6 @@
-﻿using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
-using System.Windows;
+﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.UI
+namespace JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Dialogs
 {
     public class DialogWindowService : IWindowService
     {

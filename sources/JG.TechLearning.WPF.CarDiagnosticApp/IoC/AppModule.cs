@@ -1,11 +1,11 @@
 ﻿using Autofac;
 using JG.TechLearning.WPF.CarDiagnostic.DataSources.Common;
+using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;
 using JG.TechLearning.WPF.CarDiagnostic.Mock;
-using JG.TechLearning.WPF.CarDiagnosticApp.UI;
-using JG.TechLearning.WPF.CarDiagnosticApp.Version;
-using JG.TechLearning.WPF.CarDiagnosticApp.ViewModel;
+using JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Dialogs;
+using JG.TechLearning.WPF.CarDiagnostic.ViewModel;
 using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using NLog;
 using NLog.Config;

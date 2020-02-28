@@ -1,7 +1,7 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using System.Linq;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
+namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
 {
     public class LiveDataViewModel : ViewModelBaseExt
     {

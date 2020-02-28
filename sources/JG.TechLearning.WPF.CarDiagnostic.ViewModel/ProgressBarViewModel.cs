@@ -1,11 +1,11 @@
-﻿using JG.TechLearning.WPF.CarDiagnosticApp.Enums;
-using JG.TechLearning.WPF.CarDiagnosticApp.Messages;
-using JG.TechLearning.WPF.CarDiagnosticApp.Model;
+﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
+using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
+using JG.TechLearning.WPF.CarDiagnostic.MvvmMessages;
 using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
+namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
 {
     public class ProgressBarViewModel : ViewModelBaseExt
     {
@@ -70,7 +70,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.ViewModel
             await Task.Delay(1000).ContinueWith(
                 (task) =>
             {
-                message?.OnLoadingEndedCallback(Enums.ProgressResult.Success);
+                message?.OnLoadingEndedCallback(ProgressResult.Success);
             });
 
         }

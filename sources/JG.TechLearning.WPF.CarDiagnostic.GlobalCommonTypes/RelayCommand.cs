@@ -1,10 +1,7 @@
-﻿using GalaSoft.MvvmLight.Command;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using System.Windows.Input;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Commands
+namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes
 {
     public class RelayCommand : ICommand
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Enums
+namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums
 {
     public enum ProgressResult
     {

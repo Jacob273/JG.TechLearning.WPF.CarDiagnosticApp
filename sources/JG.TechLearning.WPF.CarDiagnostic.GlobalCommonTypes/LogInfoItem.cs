@@ -1,7 +1,7 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
 using System;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Model
+namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes
 {
     public class LogInfoItem
     {

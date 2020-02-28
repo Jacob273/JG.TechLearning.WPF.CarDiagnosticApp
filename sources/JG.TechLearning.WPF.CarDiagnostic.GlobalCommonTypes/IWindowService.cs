@@ -1,4 +1,4 @@
-﻿namespace JG.TechLearning.WPF.CarDiagnosticApp.UI
+﻿namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes
 {
     public interface IWindowService
     {

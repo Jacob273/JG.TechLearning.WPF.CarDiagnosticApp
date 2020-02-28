@@ -1,7 +1,7 @@
-﻿using JG.TechLearning.WPF.CarDiagnosticApp.Enums;
+﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
 using System;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Messages
+namespace JG.TechLearning.WPF.CarDiagnostic.MvvmMessages
 {
     public class IndicateProgressMessage
     {

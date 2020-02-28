@@ -1,11 +1,11 @@
 ﻿using GalaSoft.MvvmLight.Messaging;
 using JG.TechLearning.WPF.CarDiagnosticApp.IoC;
-using JG.TechLearning.WPF.CarDiagnosticApp.Enums;
-using JG.TechLearning.WPF.CarDiagnosticApp.Messages;
 using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using System.Windows;
 using NLog.Config;
 using NLog;
+using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
+using JG.TechLearning.WPF.CarDiagnostic.MvvmMessages;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp
 {

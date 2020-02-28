@@ -1,7 +1,5 @@
-﻿using Autofac;
+﻿using JG.TechLearning.WPF.CarDiagnostic.ViewModel;
 using JG.TechLearning.WPF.CarDiagnosticApp.IoC;
-using JG.TechLearning.WPF.CarDiagnosticApp.Version;
-using JG.TechLearning.WPF.CarDiagnosticApp.ViewModel;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp
 {
