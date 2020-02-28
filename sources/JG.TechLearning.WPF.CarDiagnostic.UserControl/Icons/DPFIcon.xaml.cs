@@ -11,14 +11,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Controls
+namespace JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Icons
 {
     /// <summary>
-    /// Interaction logic for CarTestsIcon.xaml
+    /// Interaction logic for DPFIcon.xaml
     /// </summary>
-    public partial class CarTestsIcon : UserControl
+    public partial class DPFIcon : UserControl
     {
-        public CarTestsIcon()
+        public DPFIcon()
         {
             InitializeComponent();
         }

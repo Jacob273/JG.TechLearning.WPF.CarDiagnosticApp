@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Controls
+namespace JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Controls
 {
     public partial class CircularProgressBar : ProgressBar
     {

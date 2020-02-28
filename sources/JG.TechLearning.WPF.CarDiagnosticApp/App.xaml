@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              d1p1:Ignorable="d" 
              xmlns:vm="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp.ViewModel"
-             xmlns:vw="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp.View"
+             xmlns:vw="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Controls;assembly=JG.TechLearning.WPF.CarDiagnostic.UserControl"
              xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006">
     <Application.Resources>
         <ResourceDictionary>

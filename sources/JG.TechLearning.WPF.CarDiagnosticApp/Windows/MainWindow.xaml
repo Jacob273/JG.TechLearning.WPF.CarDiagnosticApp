@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp"
-        xmlns:controls="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp.Controls"
+        xmlns:icons="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Icons;assembly=JG.TechLearning.WPF.CarDiagnostic.UserControl"
         mc:Ignorable="d"
         DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
         Title="{Binding Title}" 
@@ -46,20 +46,20 @@
         
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
             <Button Background="Transparent" Command="{Binding OpenLiveDataCommand}">
-                <controls:LiveDataMainIcon Margin="4" Width="130" Height="100"></controls:LiveDataMainIcon>
+                <icons:LiveDataMainIcon Margin="4" Width="130" Height="100"></icons:LiveDataMainIcon>
             </Button>
 
             <Button Background="Transparent">
-                <controls:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></controls:DiagnosticTroubleCodeIcon>
+                <icons:DiagnosticTroubleCodeIcon Margin="4" Width="130" Height="100"></icons:DiagnosticTroubleCodeIcon>
             </Button>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Top">
             <Button Background="Transparent">
-                <controls:CarTestsIcon Margin="4" Width="130" Height="100"></controls:CarTestsIcon>
+                <icons:CarTestsIcon Margin="4" Width="130" Height="100"></icons:CarTestsIcon>
             </Button>
             <Button Background="Transparent">
-                <controls:DPFIcon Margin="4" Width="130" Height="100"></controls:DPFIcon>
+                <icons:DPFIcon Margin="4" Width="130" Height="100"></icons:DPFIcon>
             </Button>
         </StackPanel>
         

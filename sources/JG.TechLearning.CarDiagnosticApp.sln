@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.DataSources.Common", "JG.TechLearning.WPF.CarDiagnostic.DataSources.Common\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common.csproj", "{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.UserControl", "JG.TechLearning.WPF.CarDiagnostic.UserControl\JG.TechLearning.WPF.CarDiagnostic.UserControl.csproj", "{A3170834-B2EC-4FF2-A709-A406DE6A78B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
