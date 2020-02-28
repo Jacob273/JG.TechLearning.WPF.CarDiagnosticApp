@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Converters
+namespace JG.TechLearning.WPF.CarDiagnostic.Converter
 {
     public class AngleToPointConverter : IValueConverter
     {

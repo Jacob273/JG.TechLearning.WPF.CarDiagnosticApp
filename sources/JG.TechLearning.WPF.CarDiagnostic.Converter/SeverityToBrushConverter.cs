@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Converters
+namespace JG.TechLearning.WPF.CarDiagnostic.Converter
 {
     public class SeverityToBrushConverter : IValueConverter
     {

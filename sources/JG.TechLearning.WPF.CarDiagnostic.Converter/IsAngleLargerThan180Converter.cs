@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace JG.TechLearning.WPF.CarDiagnosticApp.Converters
+namespace JG.TechLearning.WPF.CarDiagnostic.Converter
 {
     public class IsAngleLargerThan180Converter : IValueConverter
     {
