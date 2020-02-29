@@ -1,8 +1,7 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.DataSources.Common;
+﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;

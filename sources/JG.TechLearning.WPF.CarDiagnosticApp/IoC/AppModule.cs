@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using JG.TechLearning.WPF.CarDiagnostic.DataSources.Common;
 using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;

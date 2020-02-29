@@ -13,17 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor", "JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor.csproj", "{A7170F76-5E16-4420-817D-8799FC2BEDF4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.DataSources.Common", "JG.TechLearning.WPF.CarDiagnostic.DataSources.Common\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common.csproj", "{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.UserControl", "JG.TechLearning.WPF.CarDiagnostic.UserControl\JG.TechLearning.WPF.CarDiagnostic.UserControl.csproj", "{A3170834-B2EC-4FF2-A709-A406DE6A78B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.ViewModel", "JG.TechLearning.WPF.CarDiagnostic.ViewModel\JG.TechLearning.WPF.CarDiagnostic.ViewModel.csproj", "{E9DD43D0-0494-4C7F-81CC-7EF770B62501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.ViewModel", "JG.TechLearning.WPF.CarDiagnostic.ViewModel\JG.TechLearning.WPF.CarDiagnostic.ViewModel.csproj", "{E9DD43D0-0494-4C7F-81CC-7EF770B62501}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes", "JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj", "{113B48F3-0FD8-4F55-B1B1-1237AAA4716A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes", "JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj", "{113B48F3-0FD8-4F55-B1B1-1237AAA4716A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.MvvmMessages", "JG.TechLearning.WPF.CarDiagnostic.MvvmMessages\JG.TechLearning.WPF.CarDiagnostic.MvvmMessages.csproj", "{970E05E1-CBEC-4188-BA69-A820D8B54187}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.MvvmMessages", "JG.TechLearning.WPF.CarDiagnostic.MvvmMessages\JG.TechLearning.WPF.CarDiagnostic.MvvmMessages.csproj", "{970E05E1-CBEC-4188-BA69-A820D8B54187}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JG.TechLearning.WPF.CarDiagnostic.Converter", "JG.TechLearning.WPF.CarDiagnostic.Converter\JG.TechLearning.WPF.CarDiagnostic.Converter.csproj", "{B328C37B-4090-46ED-9F40-5D08E5A03CFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JG.TechLearning.WPF.CarDiagnostic.Converter", "JG.TechLearning.WPF.CarDiagnostic.Converter\JG.TechLearning.WPF.CarDiagnostic.Converter.csproj", "{B328C37B-4090-46ED-9F40-5D08E5A03CFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,10 +49,6 @@ Global
 		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7170F76-5E16-4420-817D-8799FC2BEDF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3D9E0DF-3EBE-4C53-9698-8661CF511EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3170834-B2EC-4FF2-A709-A406DE6A78B1}.Release|Any CPU.ActiveCfg = Release|Any CPU

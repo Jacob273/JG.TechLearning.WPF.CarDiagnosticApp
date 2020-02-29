@@ -51,7 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.Converter\JG.TechLearning.WPF.CarDiagnostic.Converter.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common\JG.TechLearning.WPF.CarDiagnostic.DataSources.Common.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor.csproj" />
