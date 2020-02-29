@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataAccessLayer\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
   </ItemGroup>
 
 </Project>
