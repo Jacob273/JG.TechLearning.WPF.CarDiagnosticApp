@@ -3,6 +3,8 @@ using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Timers;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS
@@ -11,8 +13,6 @@ namespace JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS
     {
         public CarsMockDataSource()
         {
-            GenerateData();
-            InitializeTimerForDataSimulation();
         }
 
         public string Name => Constants.CarsDataSourceName;
@@ -25,12 +25,18 @@ namespace JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS
             }
         }
 
-        private Timer _simulationTimer;
+        public bool IsAlive { get; private set; }
+
+        private System.Timers.Timer _simulationTimer;
         private bool isTimerRunning;
         private List<Data> _dataList;
 
         private const string SpeedValueAddress = "SpeedValue";
         private const string TemperatureValueAddress = "TemperatureValue";
+
+        public event EventHandler OnIsAlive;
+        public event EventHandler OnIsDead;
+
         private void GenerateData()
         {
             Data speedValueData = new Data(0.0d, SpeedValueAddress);
@@ -44,7 +50,7 @@ namespace JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS
         {
             if (!isTimerRunning)
             {
-                _simulationTimer = new Timer(interval: 1500);
+                _simulationTimer = new System.Timers.Timer(interval: 1500);
                 _simulationTimer.Elapsed += OnTimedEvent;
                 _simulationTimer.AutoReset = true;
                 _simulationTimer.Enabled = true;
@@ -67,6 +73,27 @@ namespace JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS
             maximum = 80;
             minimum = 70;
             temperatureValue.Value = random.NextDouble() * (maximum - minimum) + minimum;
+        }
+
+        public async Task<bool> TryConnectAsync(Action onErrorCallback)
+        {
+            return await Task<bool>.Run(() =>
+            {
+                try
+                {
+                        Thread.Sleep(3000);
+                        GenerateData();
+                        IsAlive = true;
+                        OnIsAlive?.Invoke(this, null);
+                        InitializeTimerForDataSimulation();
+                        return true;
+                }
+                catch(Exception e)
+                {
+                    onErrorCallback?.Invoke();
+                    return false;
+                }
+            });
         }
     }
 }

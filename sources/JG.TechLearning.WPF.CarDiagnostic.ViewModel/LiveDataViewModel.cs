@@ -1,4 +1,6 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
+using NLog;
+using System;
 using System.Linq;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
@@ -9,10 +11,10 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
         public LiveDataViewModel(IDataSource carsDataSource)
         {
             _carsDataSource = carsDataSource;
-            RegisterOnDataSpeedValueChange();
+            ConnectToDataSourceAsync();
         }
 
-        private double _speedValue = 60;
+        private double _speedValue = -1;
 
         /// <summary>
         /// Sets and gets the SpeedValue property.
@@ -35,6 +37,41 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
                 _speedValue = value;
                 RaisePropertyChanged(nameof(SpeedValue));
             }
+        }
+
+        private async void ConnectToDataSourceAsync()
+        {
+            if(_carsDataSource == null)
+            {
+                LogManager.GetCurrentClassLogger().Error($"Could not connect to data source. Data source is null.");
+                return;
+            }
+
+            if(!_carsDataSource.IsAlive)
+            {
+                _carsDataSource.OnIsAlive -= OnIsDataSourceAlive;
+                _carsDataSource.OnIsAlive += OnIsDataSourceAlive;
+
+                var connectionResult = await _carsDataSource.TryConnectAsync( onErrorCallback: () =>
+                {
+                    LogManager.GetCurrentClassLogger().Error($"Could not connect to data source: <{_carsDataSource.Name}>. Error occured on data source logic.");
+                });
+
+                if(connectionResult)
+                {
+                    LogManager.GetCurrentClassLogger().Info($"Connected to data source: <{_carsDataSource.Name}> successfully. Waiting for OnIsAlive event.");
+                }
+                else
+                {
+                    LogManager.GetCurrentClassLogger().Error($"Could not connect to data source: <{_carsDataSource.Name}>.");
+                    //todo: retry in case of DA failure
+                }
+            }
+        }
+
+        private void OnIsDataSourceAlive(object sender, EventArgs e)
+        {
+            RegisterOnDataSpeedValueChange();
         }
 
         private void RegisterOnDataSpeedValueChange()
