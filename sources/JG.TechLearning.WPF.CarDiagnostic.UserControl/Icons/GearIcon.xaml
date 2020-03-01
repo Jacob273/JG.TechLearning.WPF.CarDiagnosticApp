@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Icons.GearIcon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Icons"
+             mc:Ignorable="d" 
+             Height="90"
+             Width="90">
+    <Viewbox>
+        <Canvas Height="90" Width="90">
+            <Ellipse Height="71" Canvas.Left="10" Stroke="Black" Canvas.Top="10" Width="70" Fill="#FF00B4FF" StrokeThickness="8"/>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="36.251" Stretch="Fill" Stroke="Black" Canvas.Top="78.75" Width="20"/>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="11.001" Stretch="Fill" Stroke="Black" Canvas.Top="69.396" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="40"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="-3.499" Stretch="Fill" Stroke="Black" Canvas.Top="41.083" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="36.251" Stretch="Fill" Stroke="Black" Canvas.Top="2.667" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="73.001" Stretch="Fill" Stroke="Black" Canvas.Top="41.083" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="270"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="61.334" Stretch="Fill" Stroke="Black" Canvas.Top="15.083" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="220"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="9.501" Stretch="Fill" Stroke="Black" Canvas.Top="13.583" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="130"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path Data="M131.75,188.58333 L150.25,188.58333 149.8443,197.50033 132.5614,197.50033 z" Fill="Black" Height="10" Canvas.Left="61.834" Stretch="Fill" Stroke="Black" Canvas.Top="65.916" Width="20" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-40"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+    </Viewbox>
+</UserControl>

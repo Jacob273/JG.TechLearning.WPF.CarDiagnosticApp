@@ -20,7 +20,7 @@
     </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1.2*"></RowDefinition>
             <RowDefinition Height="4*"></RowDefinition>
             <RowDefinition Height="4*"></RowDefinition>
             <RowDefinition Height="4*"></RowDefinition>
@@ -29,7 +29,7 @@
 
         <Border Grid.Row="0"
                 x:Name="RounderBorderTopBar" 
-                CornerRadius="30 30 30 30" 
+                CornerRadius="30 0 0 30" 
                 BorderThickness="2,5,2,5" 
                 BorderBrush="{DynamicResource DarkBlueBrush}" >
             <Border.Background>
@@ -40,8 +40,10 @@
             </Border.Background>
         </Border>
 
-        <StackPanel Grid.Row="0">
-            <Label HorizontalAlignment="Center">TopBar</Label>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right">
+            <Button Background="Transparent" BorderBrush="Transparent">
+                <icons:GearIcon Height="30" Width="30"></icons:GearIcon>
+            </Button>
         </StackPanel>
         
         <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Top">
