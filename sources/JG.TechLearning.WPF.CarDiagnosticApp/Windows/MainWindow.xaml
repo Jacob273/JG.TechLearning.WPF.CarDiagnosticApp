@@ -41,7 +41,7 @@
         </Border>
 
         <StackPanel Grid.Row="0" HorizontalAlignment="Right">
-            <Button Background="Transparent" BorderBrush="Transparent">
+            <Button Background="Transparent" BorderBrush="Transparent" Command="{Binding OpenApplicationSettingsCommand}">
                 <icons:GearIcon Height="30" Width="30"></icons:GearIcon>
             </Button>
         </StackPanel>

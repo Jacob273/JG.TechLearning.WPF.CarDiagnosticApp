@@ -10,6 +10,9 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 using System.Linq;
+using System.Windows.Media;
+using JG.TechLearning.WPF.CarDiagnostic.Common;
+using JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
 {
@@ -38,7 +41,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
 
             builder.RegisterType<DialogWindowService>().As<IWindowService>();
             builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
-
+            builder.RegisterType<Languages>().As<ILanguages>();
             //viewmodels
             builder.Register((ctx) =>
             {
@@ -46,7 +49,10 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
                 return new LiveDataViewModel(carsDataSource);
 
             }).As<LiveDataViewModel>().SingleInstance();
-            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), ctx.Resolve<LiveDataViewModel>()));
+            
+            builder.RegisterType<ApplicationSettingsViewModel>();
+
+            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), ctx.Resolve<LiveDataViewModel>(), ctx.Resolve<ApplicationSettingsViewModel>()));
             builder.RegisterType<ProgressBarViewModel>();
             
 
@@ -63,6 +69,8 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
                 config.AddRule(LogLevel.Info, LogLevel.Fatal, fileTarget);
                 return config;
             }).As<LoggingConfiguration>();
+
+            
         }
     }
 }

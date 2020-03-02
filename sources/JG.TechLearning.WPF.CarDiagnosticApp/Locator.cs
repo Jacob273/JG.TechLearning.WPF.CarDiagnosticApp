@@ -1,4 +1,5 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.ViewModel;
+﻿using System.Windows;
+using JG.TechLearning.WPF.CarDiagnostic.ViewModel;
 using JG.TechLearning.WPF.CarDiagnosticApp.IoC;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp
@@ -26,6 +27,15 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp
             get
             {
                 return IoCKernel.Get<LiveDataViewModel>();
+            }
+        }
+
+        public ApplicationSettingsViewModel ApplicationSettingsViewModel
+        {
+            get
+            {
+                return IoCKernel.Get<ApplicationSettingsViewModel>();
+
             }
         }
     }

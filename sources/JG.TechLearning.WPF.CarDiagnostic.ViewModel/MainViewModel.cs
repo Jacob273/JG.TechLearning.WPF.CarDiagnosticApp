@@ -7,16 +7,17 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
     {
         private IWindowService _windowService;
         private ViewModelBaseExt _liveDataViewModel;
-
+        private ViewModelBaseExt _applcationSettingsViewModel;
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel(IVersionResolver versionResolver, IWindowService windowService, ViewModelBaseExt liveDataViewModel)
+        public MainViewModel(IVersionResolver versionResolver, IWindowService windowService, ViewModelBaseExt liveDataViewModel, ViewModelBaseExt applicationSettingsViewModel)
         {
             Title = $"Car diagnostic Application {versionResolver.GetVersion()}";
             LogManager.GetCurrentClassLogger().Warn($"~Starting up {Title}");
             _windowService = windowService;
             _liveDataViewModel = liveDataViewModel;
+            _applcationSettingsViewModel = applicationSettingsViewModel;
         }
 
         private string _title;
@@ -46,6 +47,7 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
 
         private RelayCommand _openLiveDataCommand;
 
+        private RelayCommand _openApplicationSettingsCommand;
         /// <summary>
         /// Gets the MyCommand.
         /// </summary>
@@ -62,6 +64,25 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
                     null));
             }
         }
+
+        /// <summary>
+        /// Gets the MyCommand.
+        /// </summary>
+        public RelayCommand OpenApplicationSettingsCommand
+        {
+            get
+            {
+                return _openApplicationSettingsCommand ?? (_openApplicationSettingsCommand = new RelayCommand(
+                           () =>
+                           {
+
+                               _windowService.ShowWindow(_applcationSettingsViewModel);
+                           },
+                           null));
+            }
+        }
+
+
 
     }
 }

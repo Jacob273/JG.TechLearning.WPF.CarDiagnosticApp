@@ -9,7 +9,7 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
     /// <summary>
     /// View model for application settings view.
     /// </summary>
-    class ApplicationSettingsViewModel : ViewModelBaseExt
+    public class ApplicationSettingsViewModel : ViewModelBaseExt
     {
         public ApplicationSettingsViewModel(ILanguages languages)
         {
