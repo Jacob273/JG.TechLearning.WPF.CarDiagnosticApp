@@ -1,4 +1,5 @@
 using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
+using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
 using NLog;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
@@ -11,13 +12,41 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel(IVersionResolver versionResolver, IWindowService windowService, ViewModelBaseExt liveDataViewModel, ViewModelBaseExt applicationSettingsViewModel)
+        public MainViewModel(IVersionResolver versionResolver, IWindowService windowService, ViewModelBaseExt liveDataViewModel, 
+            ViewModelBaseExt applicationSettingsViewModel, LoggingViewModel loggingViewModel)
         {
             Title = $"Car diagnostic Application {versionResolver.GetVersion()}";
             LogManager.GetCurrentClassLogger().Warn($"~Starting up {Title}");
             _windowService = windowService;
             _liveDataViewModel = liveDataViewModel;
             _applcationSettingsViewModel = applicationSettingsViewModel;
+            _loggingViewModel = loggingViewModel;
+            _loggingViewModel.Log(new LogInfoItem("Welcome",LogInfoSeverity.Info));
+        }
+
+        private LoggingViewModel _loggingViewModel = null;
+
+        /// <summary>
+        /// Sets and gets the LoggingViewModel property.
+        /// Changes to that property's value raise the PropertyChanged event. 
+        /// </summary>
+        public LoggingViewModel LoggingViewModel
+        {
+            get
+            {
+                return _loggingViewModel;
+            }
+
+            set
+            {
+                if (_loggingViewModel == value)
+                {
+                    return;
+                }
+
+                _loggingViewModel = value;
+                RaisePropertyChanged(nameof(LoggingViewModel));
+            }
         }
 
         private string _title;

@@ -38,5 +38,13 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp
 
             }
         }
+
+        public LoggingViewModel LoggingViewModel
+        {
+            get
+            {
+                return IoCKernel.Get<LoggingViewModel>();
+            }
+        }
     }
 }
