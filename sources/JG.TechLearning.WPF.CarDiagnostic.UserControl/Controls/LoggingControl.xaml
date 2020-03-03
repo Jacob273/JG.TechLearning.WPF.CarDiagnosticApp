@@ -15,14 +15,14 @@
             <Label>Log window</Label>
         </Border>
         <Border Padding="3">
-            <ListView Grid.Row="1"
+            <local:AutoScrollingListView 
+                          Grid.Row="1"
                           Style="{StaticResource LogListViewLogStyle}" 
                           ItemContainerStyle="{StaticResource LogItemContainerStyle}" 
                           IsEnabled="False" 
-                          ScrollViewer.CanContentScroll="True"
                           Template="{StaticResource LogListViewNewTemplate}" 
                           ItemsSource="{Binding LogCollection}">
-            </ListView>
+            </local:AutoScrollingListView>
         </Border>
     </StackPanel>
 </UserControl>
