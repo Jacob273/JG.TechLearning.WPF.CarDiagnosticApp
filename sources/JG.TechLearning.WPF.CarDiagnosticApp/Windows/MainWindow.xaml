@@ -80,16 +80,19 @@
             </Border.Background>
         </Border>
 
-        <StackPanel Grid.Row="3">
+        <Grid Grid.Row="3">
             <controls:LoggingControl
                                     DataContext="{Binding LoggingViewModel}"
                                     HorizontalAlignment="Stretch" 
                                     VerticalAlignment="Stretch">
             </controls:LoggingControl>
-        </StackPanel>
-        
+        </Grid>
+
         <StackPanel Grid.Row="4">
-            <Label HorizontalAlignment="Center">BottomBar</Label>
+            <!--<controls:AutoScrollingListView DataContext="{Binding LoggingViewModel}">
+            </controls:AutoScrollingListView>-->
+
+            <!--<Label HorizontalAlignment="Center">BottomBar</Label>-->
         </StackPanel>
 
     </Grid>

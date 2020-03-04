@@ -52,7 +52,7 @@
 
     <!-- ListView- Style -->
     <Style x:Key="LogListViewLogStyle" TargetType="{x:Type ctrl:AutoScrollingListView}">
-        <Setter Property="IsEnabled" Value="False"></Setter>
+        <Setter Property="IsEnabled" Value="True"></Setter>
         <Setter Property="Padding" Value="1"/>
         <Setter Property="Background" Value="Transparent"></Setter>
         <Setter Property="BorderBrush" Value="White"></Setter>
@@ -86,8 +86,13 @@
 
     <!--ListView new template-->
     <ControlTemplate x:Key="LogListViewNewTemplate" TargetType="{x:Type ctrl:AutoScrollingListView}">
-        <Border x:Name="Bd" BorderBrush="Transparent" BorderThickness="0" Background="White" Padding="1" SnapsToDevicePixels="True">
-            <ScrollViewer x:Name="Scroller" Focusable="False" Padding="{TemplateBinding Padding}">
+        <Border x:Name="Bd"
+                BorderBrush="Transparent" 
+                BorderThickness="0" 
+                Background="Transparent" 
+                Padding="1" 
+                SnapsToDevicePixels="True">
+            <ScrollViewer x:Name="Scroller" IsEnabled="True" Focusable="False" Padding="{TemplateBinding Padding}">
                 <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
             </ScrollViewer>
         </Border>
