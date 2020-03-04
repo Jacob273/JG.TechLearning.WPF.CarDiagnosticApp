@@ -1,7 +1,5 @@
 ﻿using Autofac;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
-using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;
-using JG.TechLearning.WPF.CarDiagnostic.Mock;
 using JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Dialogs;
 using JG.TechLearning.WPF.CarDiagnostic.ViewModel;
 using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
@@ -11,6 +9,8 @@ using NLog.Targets;
 using System.Linq;
 using JG.TechLearning.WPF.CarDiagnostic.Common;
 using JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces;
+using JG.TechLearning.WPF.CarDiagnostic.IRegistry;
+using JG.TechLearning.WPF.CarDiagnostic.MockRegistry;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
 {
@@ -25,11 +25,11 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
         /// <param name="builder"></param>
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<MockDataPossessor>().As<IDataSourcesPossessor>().SingleInstance();
+            builder.RegisterType<DataSourceMockRegistry>().As<IDataSourcesRegistry>().SingleInstance();
 
             builder.Register((ctx) =>
             {
-                var possesor = ctx.Resolve<IDataSourcesPossessor>();
+                var possesor = ctx.Resolve<IDataSourcesRegistry>();
                 var carsDA = possesor.DataSources
                                      .Select(x => x)
                                      .Where(x => x.Name.Equals(Constants.CarsDataSourceName))

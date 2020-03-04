@@ -1,13 +1,13 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSourceNS;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
-using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;
+using JG.TechLearning.WPF.CarDiagnostic.IRegistry;
 using System.Collections.Generic;
 
-namespace JG.TechLearning.WPF.CarDiagnostic.Mock
+namespace JG.TechLearning.WPF.CarDiagnostic.MockRegistry
 {
-    public class MockDataPossessor : IDataSourcesPossessor
+    public class DataSourceMockRegistry : IDataSourcesRegistry
     {
-        public MockDataPossessor()
+        public DataSourceMockRegistry()
         {
             CarsMockDataSource carMockDataSource = new CarsMockDataSource();
             _dataSources = new List<IDataSource>();

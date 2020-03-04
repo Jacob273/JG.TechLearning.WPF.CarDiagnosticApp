@@ -1,9 +1,9 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using System.Collections.Generic;
 
-namespace JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS
+namespace JG.TechLearning.WPF.CarDiagnostic.IRegistry
 {
-    public interface IDataSourcesPossessor
+    public interface IDataSourcesRegistry
     {
         IEnumerable<IDataSource> DataSources { get; }
     }

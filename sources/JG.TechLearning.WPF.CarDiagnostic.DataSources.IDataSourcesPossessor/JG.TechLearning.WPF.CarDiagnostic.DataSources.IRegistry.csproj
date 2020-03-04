@@ -2,9 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.DataSourcse.IDataSourcesPossessor</AssemblyName>
-    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor</RootNamespace>
+    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.DataSourcse.IRegistry</AssemblyName>
+    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.DataSources.IRegistry</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />

@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor</AssemblyName>
-    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor</RootNamespace>
+    <AssemblyName>JG.TechLearning.WPF.CarDiagnostic.DataSources.MockRegistry</AssemblyName>
+    <RootNamespace>JG.TechLearning.WPF.CarDiagnostic.DataSources.MockRegistry</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.CarsMockDataSource.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor\JG.TechLearning.WPF.CarDiagnostic.DataSources.IRegistry.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
   </ItemGroup>
 

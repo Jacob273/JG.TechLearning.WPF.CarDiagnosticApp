@@ -52,9 +52,9 @@
   <ItemGroup>
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.Common\JG.TechLearning.WPF.CarDiagnostic.Common.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.Converter\JG.TechLearning.WPF.CarDiagnostic.Converter.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSourcesPossessor\JG.TechLearning.WPF.CarDiagnostic.DataSources.IRegistry.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor.csproj" />
+    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockDataSourcesPossesor\JG.TechLearning.WPF.CarDiagnostic.DataSources.MockRegistry.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.UserControl\JG.TechLearning.WPF.CarDiagnostic.UserControl.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.ViewModel\JG.TechLearning.WPF.CarDiagnostic.ViewModel.csproj" />
   </ItemGroup>
