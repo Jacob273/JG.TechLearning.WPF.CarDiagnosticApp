@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourcesPossessorNS;
 using JG.TechLearning.WPF.CarDiagnostic.Mock;
@@ -10,7 +9,6 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 using System.Linq;
-using System.Windows.Media;
 using JG.TechLearning.WPF.CarDiagnostic.Common;
 using JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces;
 

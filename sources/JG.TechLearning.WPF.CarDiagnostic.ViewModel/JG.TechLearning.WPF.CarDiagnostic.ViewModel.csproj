@@ -13,7 +13,6 @@
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces\JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.Common\JG.TechLearning.WPF.CarDiagnostic.Common.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.MvvmMessages\JG.TechLearning.WPF.CarDiagnostic.MvvmMessages.csproj" />
   </ItemGroup>
 

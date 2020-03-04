@@ -1,7 +1,7 @@
+using GalaSoft.MvvmLight.Command;
 using JG.TechLearning.WPF.CarDiagnostic.Common;
 using JG.TechLearning.WPF.CarDiagnostic.Common.Enums;
 using JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces;
-using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using NLog;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel

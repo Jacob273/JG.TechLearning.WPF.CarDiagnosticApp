@@ -9,7 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.Common\JG.TechLearning.WPF.CarDiagnostic.Common.csproj" />
     <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource\JG.TechLearning.WPF.CarDiagnostic.DataSources.IDataSource.csproj" />
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj" />
   </ItemGroup>
 
 </Project>

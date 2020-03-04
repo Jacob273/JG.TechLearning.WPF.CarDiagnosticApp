@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Resource\diagnostic.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>

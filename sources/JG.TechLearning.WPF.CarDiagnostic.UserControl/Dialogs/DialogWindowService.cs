@@ -1,5 +1,4 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces;
-using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Dialogs
 {

@@ -5,8 +5,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes\JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.csproj" />
-  </ItemGroup>
-
 </Project>
