@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JG.TechLearning.WPF.CarDiagnosticApp"
         xmlns:icons="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Icons;assembly=JG.TechLearning.WPF.CarDiagnostic.UserControl"
+        xmlns:controls="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Controls;assembly=JG.TechLearning.WPF.CarDiagnostic.UserControl"
         mc:Ignorable="d"
         DataContext="{Binding MainViewModel, Source={StaticResource Locator}}"
         Title="{Binding Title}" 
@@ -79,6 +80,14 @@
             </Border.Background>
         </Border>
 
+        <StackPanel Grid.Row="3">
+            <controls:LoggingControl
+                                    DataContext="{Binding LoggingViewModel}"
+                                    HorizontalAlignment="Stretch" 
+                                    VerticalAlignment="Stretch">
+            </controls:LoggingControl>
+        </StackPanel>
+        
         <StackPanel Grid.Row="4">
             <Label HorizontalAlignment="Center">BottomBar</Label>
         </StackPanel>

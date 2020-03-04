@@ -43,6 +43,7 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
             builder.RegisterType<AssemblyVersionResolver>().As<IVersionResolver>();
             builder.RegisterType<Languages>().As<ILanguages>();
             //viewmodels
+            builder.RegisterType<LoggingViewModel>();
             builder.Register((ctx) =>
             {
                 var carsDataSource = ctx.ResolveNamed<IDataSource>(Constants.CarsDataSourceName);
@@ -52,9 +53,9 @@ namespace JG.TechLearning.WPF.CarDiagnosticApp.IoC
             
             builder.RegisterType<ApplicationSettingsViewModel>();
 
-            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), ctx.Resolve<LiveDataViewModel>(), ctx.Resolve<ApplicationSettingsViewModel>()));
+            builder.Register(ctx => new MainViewModel(ctx.Resolve<IVersionResolver>(), ctx.Resolve<IWindowService>(), ctx.Resolve<LiveDataViewModel>(), ctx.Resolve<ApplicationSettingsViewModel>(), ctx.Resolve<LoggingViewModel>()));
             builder.RegisterType<ProgressBarViewModel>();
-            
+
 
             builder.RegisterType<ProgressWindow>();
 

@@ -9,14 +9,38 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
 {
     public class ProgressBarViewModel : ViewModelBaseExt
     {
-        public ProgressBarViewModel()
+        public ProgressBarViewModel(LoggingViewModel loggingViewModel)
         {
-            LogFileCollection.Add(new LogInfoItem("Starting application...", LogInfoSeverity.Error));
-            LogFileCollection.Add(new LogInfoItem("Please wait...", LogInfoSeverity.Info));
-            LogFileCollection.Add(new LogInfoItem("...", LogInfoSeverity.Warning));
-            LogFileCollection.Add(new LogInfoItem("...", LogInfoSeverity.Unknown));
-
+            _loggingViewModel = loggingViewModel;
+            _loggingViewModel.Log(new LogInfoItem("Loading application...", LogInfoSeverity.Info));
+            _loggingViewModel.Log(new LogInfoItem("Please wait...", LogInfoSeverity.Info));
             MessengerInstance.Register<IndicateProgressMessage>(this, OnIndicateProgress);
+        }
+
+
+        private LoggingViewModel _loggingViewModel = null;
+
+        /// <summary>
+        /// Sets and gets the LoggingViewModel property.
+        /// Changes to that property's value raise the PropertyChanged event. 
+        /// </summary>
+        public LoggingViewModel LoggingViewModel
+        {
+            get
+            {
+                return _loggingViewModel;
+            }
+
+            set
+            {
+                if (_loggingViewModel == value)
+                {
+                    return;
+                }
+
+                _loggingViewModel = value;
+                RaisePropertyChanged(nameof(LoggingViewModel));
+            }
         }
 
         private double progressValue;
@@ -36,26 +60,6 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
                 }
                 progressValue = value;
                 RaisePropertyChanged(nameof(ProgressValue));
-            }
-        }
-
-        private ObservableCollection<LogInfoItem> logFileCollection = new ObservableCollection<LogInfoItem>();
-
-        public ObservableCollection<LogInfoItem> LogFileCollection
-        {
-            get
-            {
-                return logFileCollection;
-            }
-
-            set
-            {
-                if (logFileCollection == value)
-                {
-                    return;
-                }
-                logFileCollection = value;
-                RaisePropertyChanged(nameof(LogFileCollection));
             }
         }
 
