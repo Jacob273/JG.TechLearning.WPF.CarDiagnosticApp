@@ -1,5 +1,4 @@
 ﻿using JG.TechLearning.WPF.CarDiagnostic.Common;
-using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using System.Collections.ObjectModel;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
