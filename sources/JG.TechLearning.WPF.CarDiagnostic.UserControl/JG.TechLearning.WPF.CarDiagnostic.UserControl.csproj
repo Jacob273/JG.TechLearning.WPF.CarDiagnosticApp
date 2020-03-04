@@ -27,6 +27,9 @@
     <Page Update="Dialogs\DialogWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Translations\pl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

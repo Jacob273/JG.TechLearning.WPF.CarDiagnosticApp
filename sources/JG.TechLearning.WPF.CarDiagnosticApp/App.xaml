@@ -14,11 +14,14 @@
             <DataTemplate DataType="{x:Type vm:LiveDataViewModel}">
                 <vw:LiveDataUserControl/>
             </DataTemplate>
-
+            <DataTemplate DataType="{x:Type vm:ApplicationSettingsViewModel}">
+                <vw:ApplicationSettingsControl/>
+            </DataTemplate>
             <ResourceDictionary.MergedDictionaries>
                 <!--Resources-->
                 <ResourceDictionary Source="Resource/Colors.xaml" />
                 <ResourceDictionary Source="Styles/Styles.xaml" />
+                <ResourceDictionary Source="/JG.TechLearning.WPF.CarDiagnostic.UserControl;component/Translations/en-us.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         
         </ResourceDictionary>
