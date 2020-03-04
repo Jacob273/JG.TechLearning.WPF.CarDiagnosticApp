@@ -43,6 +43,7 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
             }
         }
 
+        private const double minimumProgressValueDifference = 10E-1;
         private double progressValue;
 
         public double ProgressValue
@@ -54,7 +55,7 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
 
             set
             {
-                if (Math.Abs(progressValue - value) < 10E-1)
+                if (Math.Abs(progressValue - value) < minimumProgressValueDifference)
                 {
                     return;
                 }
