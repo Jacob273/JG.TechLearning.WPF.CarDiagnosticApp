@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:conv="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.Converter;assembly=JG.TechLearning.WPF.CarDiagnostic.Converter"
                     xmlns:ctrl="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Controls;assembly=JG.TechLearning.WPF.CarDiagnostic.UserControl"
-                    xmlns:common="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;assembly=JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes">
+                    xmlns:common="clr-namespace:JG.TechLearning.WPF.CarDiagnostic.Common;assembly=JG.TechLearning.WPF.CarDiagnostic.Common">
 
     <conv:AngleToPointConverter x:Key="angleToPointConv"/>
     <conv:IsAngleLargerThan180Converter x:Key="largerThan180"/>

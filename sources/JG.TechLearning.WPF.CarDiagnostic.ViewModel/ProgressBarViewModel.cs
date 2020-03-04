@@ -1,8 +1,7 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
-using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
+﻿using JG.TechLearning.WPF.CarDiagnostic.Common;
+using JG.TechLearning.WPF.CarDiagnostic.Common.Enums;
 using JG.TechLearning.WPF.CarDiagnostic.MvvmMessages;
 using System;
-using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 
 namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel

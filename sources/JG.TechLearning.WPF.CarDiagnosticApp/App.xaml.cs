@@ -4,8 +4,8 @@ using JG.TechLearning.WPF.CarDiagnosticApp.Windows;
 using System.Windows;
 using NLog.Config;
 using NLog;
-using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
 using JG.TechLearning.WPF.CarDiagnostic.MvvmMessages;
+using JG.TechLearning.WPF.CarDiagnostic.Common.Enums;
 
 namespace JG.TechLearning.WPF.CarDiagnosticApp
 {

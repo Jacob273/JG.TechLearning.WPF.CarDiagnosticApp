@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes
+namespace JG.TechLearning.WPF.CarDiagnostic.Common
 {
     public static class Constants
     {

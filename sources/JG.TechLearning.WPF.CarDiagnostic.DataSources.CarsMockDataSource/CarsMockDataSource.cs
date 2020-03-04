@@ -1,4 +1,5 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
+﻿using JG.TechLearning.WPF.CarDiagnostic.Common;
+using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes;
 using JG.TechLearning.WPF.CarDiagnostic.IDataSourceNS;
 using System;
 using System.Collections.Generic;

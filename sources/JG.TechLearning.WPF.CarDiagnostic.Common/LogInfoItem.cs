@@ -1,13 +1,13 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
+﻿using JG.TechLearning.WPF.CarDiagnostic.Common.Enums;
 using System;
 
-namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes
+namespace JG.TechLearning.WPF.CarDiagnostic.Common
 {
     public class LogInfoItem
     {
         private DateTime timeStamp = DateTime.Now;
         private String message = string.Empty;
-        private LogInfoSeverity severity = LogInfoSeverity.Unknown;
+        private LogInfoSeverity severity = Enums.LogInfoSeverity.Unknown;
 
         public LogInfoSeverity Severity
         {

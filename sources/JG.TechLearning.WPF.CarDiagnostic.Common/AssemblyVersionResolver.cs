@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using JG.TechLearning.WPF.CarDiagnostic.Common.Interfaces;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes
+namespace JG.TechLearning.WPF.CarDiagnostic.Common
 {
     public class AssemblyVersionResolver : IVersionResolver
     {

@@ -1,4 +1,4 @@
-﻿using JG.TechLearning.WPF.CarDiagnostic.GlobalCommonTypes.Enums;
+﻿using JG.TechLearning.WPF.CarDiagnostic.Common.Enums;
 using System;
 using System.Globalization;
 using System.Windows;
