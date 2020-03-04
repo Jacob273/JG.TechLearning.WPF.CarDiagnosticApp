@@ -29,7 +29,6 @@ namespace JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Controls
             }
 
             (newValue as INotifyCollectionChanged).CollectionChanged += OnItemsCollectionChanged;
-            OnItemsCollectionChanged(this, null);
         }
 
         public override void OnApplyTemplate()
@@ -41,11 +40,6 @@ namespace JG.TechLearning.WPF.CarDiagnostic.UserControlNS.Controls
         private void OnItemsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
             if (_scrollViewer == null)
-            {
-                return;
-            }
-
-            if (!_scrollViewer.VerticalOffset.Equals(_scrollViewer.ScrollableHeight))
             {
                 return;
             }

@@ -21,10 +21,7 @@ namespace JG.TechLearning.WPF.CarDiagnostic.ViewModel
             _liveDataViewModel = liveDataViewModel;
             _applcationSettingsViewModel = applicationSettingsViewModel;
             _loggingViewModel = loggingViewModel;
-            for (int i = 0; i < 10; i++)
-            {
-                _loggingViewModel.Log(new LogInfoItem($"Welcome {i}", LogInfoSeverity.Info));
-            }
+            _loggingViewModel.Log(new LogInfoItem("Welcome.", LogInfoSeverity.Info));
         }
 
         private LoggingViewModel _loggingViewModel = null;

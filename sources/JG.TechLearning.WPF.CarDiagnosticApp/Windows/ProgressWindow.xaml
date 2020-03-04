@@ -27,7 +27,7 @@
                 Background="White" 
                 BorderThickness="1,5,1,2" 
                 BorderBrush="{StaticResource BlueBrush}" />
-        <views:ProgressBarControl VerticalAlignment="Top" Margin="0,0,0,20" />
+        <views:ProgressBarControl VerticalAlignment="Stretch" Margin="0,0,0,20" />
         
     </Grid>
 
