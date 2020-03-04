@@ -66,34 +66,12 @@
             </Button>
         </StackPanel>
         
-        <Border Grid.Row="5"
-                Margin="0 4 0 0"
-                x:Name="RounderBorderBottomBar" 
-                CornerRadius="30 30 30 30" 
-                BorderThickness="2,5,2,5" 
-                BorderBrush="{DynamicResource DarkBlueBrush}" >
-            <Border.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.504,-3.774">
-                    <GradientStop Color="Black" Offset="0.147"/>
-                    <GradientStop Color="#FF00B4FF" Offset="1"/>
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
-
-        <Grid Grid.Row="3">
+        <Grid Grid.Row="3" Grid.RowSpan="2">
             <controls:LoggingControl
                                     DataContext="{Binding LoggingViewModel}"
                                     HorizontalAlignment="Stretch" 
                                     VerticalAlignment="Stretch">
             </controls:LoggingControl>
         </Grid>
-
-        <StackPanel Grid.Row="4">
-            <!--<controls:AutoScrollingListView DataContext="{Binding LoggingViewModel}">
-            </controls:AutoScrollingListView>-->
-
-            <!--<Label HorizontalAlignment="Center">BottomBar</Label>-->
-        </StackPanel>
-
     </Grid>
 </Window>

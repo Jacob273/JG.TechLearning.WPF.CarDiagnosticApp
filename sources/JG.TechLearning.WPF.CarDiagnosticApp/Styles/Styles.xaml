@@ -57,8 +57,8 @@
         <Setter Property="Background" Value="Transparent"></Setter>
         <Setter Property="BorderBrush" Value="White"></Setter>
         <Setter Property="BorderThickness" Value="0"></Setter>
-        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Visible"></Setter>
-        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"></Setter>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Hidden"></Setter>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"></Setter>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
         <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
     </Style>
